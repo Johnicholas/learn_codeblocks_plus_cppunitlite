@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1458423138 source:c:\users\johnicholas\desktop\learn_codeblocks_plus_cppunitlite\failure.cpp
+	"Failure.h"
+	<stdio.h>
+	<string.h>
+
+1458423138 c:\users\johnicholas\desktop\learn_codeblocks_plus_cppunitlite\failure.h
+	"SimpleString.h"
+
+1458423139 c:\users\johnicholas\desktop\learn_codeblocks_plus_cppunitlite\simplestring.h
+
+1458423139 source:c:\users\johnicholas\desktop\learn_codeblocks_plus_cppunitlite\simplestring.cpp
+	"SimpleString.h"
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+
+1458423139 source:c:\users\johnicholas\desktop\learn_codeblocks_plus_cppunitlite\test.cpp
+	"Test.h"
+	"TestRegistry.h"
+	"TestResult.h"
+	"Failure.h"
+
+1458423139 c:\users\johnicholas\desktop\learn_codeblocks_plus_cppunitlite\test.h
+	<cmath>
+	"SimpleString.h"
+
+1458423139 c:\users\johnicholas\desktop\learn_codeblocks_plus_cppunitlite\testregistry.h
+
+1458423139 c:\users\johnicholas\desktop\learn_codeblocks_plus_cppunitlite\testresult.h
+
+1458423139 source:c:\users\johnicholas\desktop\learn_codeblocks_plus_cppunitlite\testregistry.cpp
+	<stdio.h>
+	"Test.h"
+	"TestResult.h"
+	"TestRegistry.h"
+
+1458423139 source:c:\users\johnicholas\desktop\learn_codeblocks_plus_cppunitlite\testresult.cpp
+	"TestResult.h"
+	"Failure.h"
+	<stdio.h>
+
