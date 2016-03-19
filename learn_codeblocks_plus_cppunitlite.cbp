@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -31,6 +33,25 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Alternation.cpp" />
+		<Unit filename="Alternation.h" />
+		<Unit filename="Failure.cpp" />
+		<Unit filename="Failure.h" />
+		<Unit filename="Language.h" />
+		<Unit filename="SimpleString.cpp" />
+		<Unit filename="SimpleString.h" />
+		<Unit filename="Symbol.cpp" />
+		<Unit filename="Symbol.h" />
+		<Unit filename="Test.cpp" />
+		<Unit filename="Test.h" />
+		<Unit filename="TestHarness.h" />
+		<Unit filename="TestRegistry.cpp" />
+		<Unit filename="TestRegistry.h" />
+		<Unit filename="TestResult.cpp" />
+		<Unit filename="TestResult.h" />
+		<Unit filename="include/Symbol.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Symbol.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

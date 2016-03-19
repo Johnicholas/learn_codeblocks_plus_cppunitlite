@@ -1,21 +1,26 @@
-#include <stdio.h>
-#include <string>
-#include "TestHarness.h"
+#include <cstddef>
 
-static inline SimpleString StringFrom(const std::string& value) {
-    return SimpleString(value.c_str());
+#include "TestHarness.h"
+#include "Symbol.h"
+#include "Alternation.h"
+#include "Empty.h"
+#include "Concatenation.h"
+
+// logicalvalue is the test name,
+// examples_of_syntax is the test group
+TEST( logicalvalue, examples_of_syntax ) {
+    Symbol s1(".TRUE");
+    Symbol s2(".FALSE");
+    Alternation logicalvalue(&s1, &s2);
 }
 
-// Hello is the test name, world is the test group
-TEST( Hello, world ) {
-  std::string s1("Hello");
-  std::string s2("Hello");
-  std::string s3("world");
-
-  CHECK_EQUAL(s1, s2);
-  CHECK_EQUAL(s2, s1);
-
-  CHECK(s1 != s3);
+TEST( secondary, examples_of_syntax ) {
+    Symbol s1("*");
+    Language* primary = 0;
+    Empty e2;
+    Concatenation c3(&s1, primary);
+    Alternation subsecondary(&c3, &e2);
+    Concatenation secondary(primary, &subsecondary);
 }
 
 int main(int argc, char* argv[]) {
